@@ -1,15 +1,21 @@
- <!-- Student ID: 301250889
- Name: Christian neAduna
- Date: October 8, 2022 -->
+<!-- File Name: index.ejs
+Name: Christian Aduna
+Student ID: 301250889
+Date: October 4, 2022 -->
 
 <% include partials/header.ejs %>
 
+<!-- Template for Home and About Me pages -->
 <% if(title == 'CAd X | Home') { %>
+<br /><br /><br /><br />
 <div class="unique">
   <p>Welcome to my Personal Portfolio Website!</p><br /><br />
   <p>I live by two pillars in everything that I do:</p> 
   <h3>Excellence and Quality.</h3><br /><br />
+
+  <!-- Link to About Me page -->
   <p>Please click <a href="/about">here</a> to know more about me.</p>
+  <br /><br /><br /><br />
 </div>
 <% } else { %>
   <h2>About Me</h2>
@@ -18,7 +24,10 @@
       <p>I am currently a student at Centennial College in Toronto, Ontario,</p>
       <p>pursuing an advance diploma in Artificial Intelligence - Software Engineering Technology.</p>
       <img class="self" src="images\photo.jpg" alt="Christian Aduna" /><br /><br />
+
+      <!-- Link to a PDF version of resume -->
       <p>Please click <a href="\pdf\Resume - Christian Aduna.pdf" target="_blank">here</a> to view my resume.</p>
+      <br />
   </div>
 <% } %>
 

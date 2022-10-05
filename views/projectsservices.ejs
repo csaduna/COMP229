@@ -1,23 +1,24 @@
- <!-- Student ID: 301250889
- Name: Christian neAduna
- Date: October 8, 2022 -->
+<!-- File Name: projectsservices.ejs
+Name: Christian Aduna
+Student ID: 301250889
+Date: October 4, 2022 -->
 
  <% include partials/header.ejs %>
 
+ <!-- Template for Projects and Services pages -->
  <% if(title == 'CAd X | Projects') { %>
     <h2>Sample Projects</h2>
+
+    <!-- Carousel with Bootstrap -->
     <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
 
-
             <div class="carousel-inner">
-
                 <div class="item active">
                     <img class="image" src="https://images.pexels.com/photos/437036/pexels-photo-437036.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Health Tracker Web and Mobile App">
                     <div class="carousel-caption">
@@ -44,9 +45,7 @@
                         <h3>Grade: Ongoing</h3>
                     </div>
                 </div>
-
             </div>
-
 
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -58,20 +57,18 @@
             </a>
         </div>
     </div>
+    <br />
     <% } else { %>
-        <h2>Services Offered</h2>
+    <h2>Services Offered</h2>
     <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
 
-
             <div class="carousel-inner">
-
                 <div class="item active">
                     <img class="image" src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web Development">
                     <div class="carousel-caption">
@@ -92,9 +89,7 @@
                         <h1>Machine Learning</h1>
                     </div>
                 </div>
-
             </div>
-
 
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -106,6 +101,7 @@
             </a>
         </div>
     </div>
+    <br />
     <% } %>
 
  <% include partials/footer.ejs %>

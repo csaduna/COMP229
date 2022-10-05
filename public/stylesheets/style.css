@@ -1,27 +1,29 @@
-/* Student ID: 301250889
+/* File Name: style.css
 Name: Christian Aduna
-Date: October 8, 2022 */
+Student ID: 301250889
+Date: October 4, 2022 */
 
 body {
-  text-align:center;
+  text-align: center;
 }
 
 .image {
-  width:100%;
+  width: 100%;
 }
 
 .self {
   height: auto;
   width: 15%;
 }
+
 .mx-auto {
   width: 76%;
   margin: auto;
 }
 
 .navbar-nav > li {
-  padding-left:50px;
-  padding-right:50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .unique {
@@ -34,8 +36,8 @@ body {
 }
 
 .form {
-  width:50%;
-  margin:auto;
+  width: 50%;
+  margin: auto;
 }
 
 input[type=text], input[type=tel], input[type=email] {

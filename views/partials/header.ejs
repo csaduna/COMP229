@@ -1,6 +1,9 @@
-<!-- nodemon
- -->
+<!-- File Name: header.ejs
+Name: Christian Aduna
+Student ID: 301250889
+Date: October 4, 2022 -->
 
+<!-- Header partial -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,8 +15,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+    <!-- Custom logo -->
     <a href="\"><img src="images\logo.PNG" alt="CAd X Logo" /></a>
     <br /><br />
+
+    <!-- Navigation bar with Bootstrap -->
     <div class="mx-auto">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -42,9 +49,9 @@
                         <li><a href="/services">Services</a></li>
                     <% } %>
                     <% if(title == 'CAd X | Contact') { %>
-                        <li class="active"><a href="/contact">Contact Me</a></li>
+                        <li class="active"><a href="/contact">Contact</a></li>
                     <% } else { %>
-                        <li><a href="/contact">Contact Me</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     <% } %>
                 </ul>
             </div>
