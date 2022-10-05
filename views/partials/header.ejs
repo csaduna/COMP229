@@ -1,0 +1,59 @@
+<!-- File Name: header.ejs
+Name: Christian Aduna
+Student ID: 301250889
+Date: October 4, 2022 -->
+
+<!-- Header partial -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title><% title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!-- Custom logo -->
+    <a href="\"><img src="images\logo.PNG" alt="CAd X Logo" /></a>
+    <br /><br />
+
+    <!-- Navigation bar with Bootstrap -->
+    <div class="mx-auto">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">CAd X</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <% if(title == 'CAd X | Home') { %>
+                        <li class="active"><a href="/">Home</a></li>
+                    <% } else { %>
+                        <li><a href="/">Home</a></li>
+                    <% } %>
+                    <% if(title == 'CAd X | About Me') { %>
+                        <li class="active"><a href="/about">About Me</a></li>
+                    <% } else { %>
+                        <li><a href="/about">About Me</a></li>
+                    <% } %>
+                    <% if(title == 'CAd X | Projects') { %>
+                        <li class="active"><a href="/projects">Projects</a></li>
+                    <% } else { %>
+                        <li><a href="/projects">Projects</a></li>
+                    <% } %>
+                    <% if(title == 'CAd X | Services') { %>
+                        <li class="active"><a href="/services">Services</a></li>
+                    <% } else { %>
+                        <li><a href="/services">Services</a></li>
+                    <% } %>
+                    <% if(title == 'CAd X | Contact') { %>
+                        <li class="active"><a href="/contact">Contact</a></li>
+                    <% } else { %>
+                        <li><a href="/contact">Contact</a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </nav>
+    </div>
