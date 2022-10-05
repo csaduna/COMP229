@@ -1,8 +1,61 @@
+/* Student ID: 301250889
+Name: Christian Aduna
+Date: October 8, 2022 */
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align:center;
 }
 
-a {
-  color: #00B7FF;
+.image {
+  width:100%;
+}
+
+.self {
+  height: auto;
+  width: 15%;
+}
+.mx-auto {
+  width: 76%;
+  margin: auto;
+}
+
+.navbar-nav > li {
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.unique {
+  font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.panel-body {
+  background-color:gray;
+}
+
+.form {
+  width:50%;
+  margin:auto;
+}
+
+input[type=text], input[type=tel], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 100%;
+  background-color:black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  border-color:black;
+  cursor: pointer;
 }

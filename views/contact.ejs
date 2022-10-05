@@ -1,0 +1,43 @@
+<% include partials/header.ejs %>
+
+<div class="unique">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p>I would love to hear from you. You may reach me at caduna@my.centennialcollege.ca.</p>
+                <p>Alternatively, you may fill out the form below.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <form action="/">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <p class="input">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required /><br />
+                </p>
+                <p class="input">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter last name" /><br />
+                </p>
+                <p class="input">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" /><br />
+                </p>
+                <p class="input">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required /><br />
+                </p>
+                <p class="input">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Your message here" /><br />
+                </p>
+                <button class="button" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<% include partials/footer.ejs %>
