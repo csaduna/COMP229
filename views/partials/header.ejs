@@ -48,10 +48,15 @@ Date: October 4, 2022 -->
                     <% } else { %>
                         <li><a href="/services">Services</a></li>
                     <% } %>
-                    <% if(title == 'CAd X | Contact') { %>
-                        <li class="active"><a href="/contact">Contact</a></li>
+                    <% if(title == 'CAd X | Business Contacts') { %>
+                        <li class="active"><a href="contacts/list">Business Contacts</a></li>
                     <% } else { %>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/contacts/list">Business Contacts</a></li>
+                    <% } %>
+                    <% if(title == 'CAd X | Contact Me') { %>
+                        <li class="active"><a href="/contact">Contact Me</a></li>
+                    <% } else { %>
+                        <li><a href="/contact">Contact Me</a></li>
                     <% } %>
                 </ul>
             </div>
