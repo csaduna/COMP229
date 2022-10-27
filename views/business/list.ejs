@@ -1,0 +1,48 @@
+<% include ../partials/header.ejs %>
+
+    <!-- <%= BusinessContacts %> -->
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+        <h1><%= title %></h1>
+        <br>
+        <div>
+            <a href="/business/add" class="btn btn-primary align-self-end" role="button">                
+                Add a New Item
+            </a>   
+            <br><br>             
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center" colspan="2">Actions</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let i = 0; i < BusinessContacts.length; i++) { %>
+                    <tr>
+                        <td class="text-center"><%= BusinessContacts[i].name %></td>
+                        <td class="text-center"><%= BusinessContacts[i].phone %></td>
+                        <td class="text-center"><%= BusinessContacts[i].email %></td>
+                       
+                        <td class="text-center">
+                            <a href="/business/edit/<%= BusinessContacts[i]._id %>" class="btn btn-primary btn-sm">Update</a>
+                        </td>
+                        <td class="text-center">
+                            <a href="/business/delete/<%= BusinessContacts[i]._id %>" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+    <br><br>
+  </main>
+<% include ../partials/footer.ejs %>

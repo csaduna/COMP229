@@ -5,30 +5,21 @@
 
 var express = require('express');
 var router = express.Router();
+let indexController = require('../controllers/index.controller');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'CAd X | Home' });
-});
+router.get('/', indexController.home);
 
 // Renders the About Me page
-router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'CAd X | About Me' });
-});
+router.get('/about', indexController.about);
 
 // Renders the Projects page
-router.get('/projects', function(req, res, next) {
-  res.render('projectsservices', { title: 'CAd X | Projects' });
-});
+router.get('/projects', indexController.projects);
 
 // Renders the Services page
-router.get('/services', function(req, res, next) {
-  res.render('projectsservices', { title: 'CAd X | Services' });
-});
+router.get('/services', indexController.services);
 
 // Renders the Contact Me page
-router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'CAd X | Contact Me' });
-});
+router.get('/contact', indexController.contact);
 
 module.exports = router;
