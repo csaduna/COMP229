@@ -14,4 +14,14 @@ router.get('/list', listController.businessContacts);
 router.get('/edit/:id', listController.displayEditPage);
 router.post('/edit/:id', listController.processEditPage);
 
+// Delete
+router.get('/delete/:id', requireAuth, listController.performDelete);
+
+
+/* GET Route for displaying the Add page - CREATE Operation */
+router.get('/add', requireAuth, listController.displayAddPage);
+
+/* POST Route for processing the Add page - CREATE Operation */
+router.post('/add', requireAuth, listController.processAddPage);
+
 module.exports = router;
