@@ -8,21 +8,19 @@
         <h1><%= title %></h1>
         <br>
         <div>
-            <a href="/contacts/add" class="btn btn-primary align-self-end" role="button">                
-                <i class="fa-solid fa-square-plus"></i>
-                Add a new Item
-            </a>                
+            <a href="/business/add" class="btn btn-primary align-self-end" role="button">                
+                Add a New Item
+            </a>   
+            <br><br>             
         </div>
 
         <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
                 <!-- Header Row-->
                 <tr>
-                    <th class="text-center">Item</th>
-                    <th class="text-center">Qty</th>
-                    <th class="text-center">Status</th>
-                    <th>Size</th>
-                    <th class="text-center">Tags</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center">Email</th>
                     <th class="text-center" colspan="2">Actions</th>
                 </tr>
 
@@ -35,17 +33,16 @@
                         <td class="text-center"><%= BusinessContacts[i].email %></td>
                        
                         <td class="text-center">
-                            <a href="/contacts/edit/<%= BusinessContacts[i]._id %>" class="btn btn-primary btn-sm">
-                            <i class="fas fa-pencil-alt"></i></a>
+                            <a href="/business/edit/<%= BusinessContacts[i]._id %>" class="btn btn-primary btn-sm">Update</a>
                         </td>
                         <td class="text-center">
-                            <a href="/contacts/delete/<%= BusinessContacts[i]._id %>" class="btn btn-danger btn-sm">
-                            <i class="fas fa-trash-alt"></i></a>
+                            <a href="/business/delete/<%= BusinessContacts[i]._id %>" class="btn btn-danger btn-sm">Delete</a>
                         </td>
                     </tr>
                 <% } %>
             </table>
         </div>
     </div>
+    <br><br>
   </main>
 <% include ../partials/footer.ejs %>

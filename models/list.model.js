@@ -3,9 +3,9 @@ let mongoose = require('mongoose');
 // Create a model class
 let listModel = mongoose.Schema(
     {
-        Email: String,
-        Name: String,
-        Number: String
+        email: String,
+        name: String,
+        phone: String
     },
     {
         collection:"contacts"

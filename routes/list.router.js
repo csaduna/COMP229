@@ -7,7 +7,11 @@ var express = require('express');
 var router = express.Router();
 let listController = require('../controllers/list.controller');
 
-/* GET users listing. */
+/* GET list of items */
 router.get('/list', listController.businessContacts);
+
+// Routers for edit
+router.get('/edit/:id', listController.displayEditPage);
+router.post('/edit/:id', listController.processEditPage);
 
 module.exports = router;
