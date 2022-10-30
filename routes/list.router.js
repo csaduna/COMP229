@@ -7,12 +7,23 @@ var express = require('express');
 var router = express.Router();
 let listController = require('../controllers/list.controller');
 
+function requireAuth(req, res, next)
+{
+    // check if the user is logged in
+    if(!req.isAuthenticated())
+    {
+        req.session.url = req.originalUrl;
+        return res.redirect('/users/signin');
+    }
+    next();
+}
+
 /* GET list of items */
 router.get('/list', listController.businessContacts);
 
 // Routers for edit
-router.get('/edit/:id', listController.displayEditPage);
-router.post('/edit/:id', listController.processEditPage);
+router.get('/edit/:id', requireAuth, listController.displayEditPage);
+router.post('/edit/:id', requireAuth, listController.processEditPage);
 
 // Delete
 router.get('/delete/:id', requireAuth, listController.performDelete);
